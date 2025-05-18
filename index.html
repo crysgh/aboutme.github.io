@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Forms Assignment</title>
+  <link rel="stylesheet" href="CrystalGhimire_formsytyle.css">
+</head>
+<body>
+
+
+  <section id="forms-section">
+    <h2>Interactive Forms</h2>
+    <div class="grid">
+
+      <div class="cell">
+        <h3>Calculator</h3>
+        <form id="calc">
+          <input name="a" type="number" placeholder="Enter First Number" required>
+          <input name="b" type="number" placeholder="Enter Second Number" required>
+          <label><input name="op" type="radio" value="+" checked> +</label>
+          <label><input name="op" type="radio" value="-"> −</label>
+          <label><input name="op" type="radio" value="*"> ×</label>
+          <label><input name="op" type="radio" value="/"> ÷</label>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+
+      <div class="cell">
+        <h3>Factorial</h3>
+        <form id="fact">
+          <input name="n" type="number" min="0" placeholder="n" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+
+      <div class="cell">
+        <h3>Fibonacci</h3>
+        <form id="fib">
+          <input name="k" type="number" min="0" placeholder="N" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+
+      <div class="cell">
+        <h3>Min/Max/Range</h3>
+        <form id="mmr">
+          <input name="x1" type="number" placeholder="1" required>
+          <input name="x2" type="number" placeholder="2" required>
+          <input name="x3" type="number" placeholder="3" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+
+      <div class="cell span2">
+        <h3>Mailing List</h3>
+        <form id="mail">
+          <label>First Name<br><input name="first" type="text" placeholder="John"></label>
+          <label>Last Name<br><input name="last" type="text" placeholder="Doe"></label>
+          <label>Email<br><input name="email" type="email" placeholder="john@aol.com"></label>
+          <label>ZIP<br><input name="zip" type="text" placeholder="12345"></label>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+        <div id="mailOutput"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="CrystalGhimire_forms.js" defer></script>
+</body>
+</html>
